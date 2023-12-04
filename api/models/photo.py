@@ -277,7 +277,7 @@ class Photo(models.Model):
                 if not self.video:
                     createThumbnail(
                         inputPath=self.main_file.path,
-                        outputHeight=1080,
+                        outputHeight=2000,
                         outputPath="thumbnails_big",
                         hash=self.image_hash,
                         fileType=".webp",
