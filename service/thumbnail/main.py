@@ -24,7 +24,7 @@ def create_thumbnail():
         with img.clone() as thumbnail:
             thumbnail.format = "webp"
             thumbnail.transform(resize=f"x{height}")
-            thumbnail.compression_quality = 95
+            thumbnail.compression_quality = 100
             thumbnail.auto_orient()
             thumbnail.save(filename=destination)
     log(f"created at location={destination}")
